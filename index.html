@@ -8,7 +8,7 @@
     <header class="page-header">
       <a class="logo-link">
         <img
-          class="logo logo-sedona"
+          class="header-logo"
           src="img/logo.svg"
           alt="Логотип городка Седона"
           width="140"
@@ -160,55 +160,55 @@
         >
       </section>
 
-      <section class="subscribe">
+      <section class="newsletter">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <div class="subscribe-container">
+        <div class="newsletter-container">
           <form
-            class="subscribe-form"
+            class="newsletter-form"
             action="https://echo.htmlacademy.ru"
             method="post"
           >
-            <label for="email">Ваш e-mail</label>
-            <input
+            <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
+            <input class="field"
               type="email"
-              name="email"
-              id="email"
+              name="newsletter-email"
+              id="newsletter-email"
               placeholder="Ваш e-mail"
               required
             />
-            <button class="button-subscribe" type="submit">Подписаться</button>
+            <button class="button newsletter-button" type="submit">Подписаться</button>
           </form>
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <section class="social-media">
+      <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <div class="social-media-container">
-          <ul class="social-media-list">
-            <li class="social-media-item">
+        <div class="footer-social-container">
+          <ul class="footer-social-list">
+            <li class="footer-social-item">
               <a
-                class="button button-social-media"
+                class="button"
                 href="https://vk.com/htmlacademy"
               >
                 <span class="visually-hidden">Vkontakte</span>
               </a>
             </li>
-            <li class="social-media-item">
+            <li class="footer-social-item">
               <a
-                class="button button-social-media"
+                class="button"
                 href="https://t.me/htmlacademy"
               >
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
-            <li class="social-media-item">
+            <li class="footer-social-item">
               <a
-                class="button button-social-media"
+                class="button"
                 href="https://www.youtube.com/user/htmlacademyru"
               >
                 <span class="visually-hidden">Youtube</span>
@@ -218,14 +218,14 @@
         </div>
       </section>
 
-      <section class="contacts">
+      <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="contacts-phone" href="tel:+78128121212">
           <span>+7 (812) 812-12-12</span>
         </a>
       </section>
 
-      <section class="logo-htmlacademy">
+      <section class="footer-logo-htmlacademy">
         <h2 class="visually-hidden">Сайт разработчика</h2>
         <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
           <img
