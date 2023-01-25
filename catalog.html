@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Гостиницы Седоны</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
           alt="Логотип городка Седона"
           width="140"
           height="70"
-        />
+          >
       </a>
 
       <nav class="navigation">
@@ -52,7 +52,7 @@
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">
-              <img class="icon-link" src="#" alt="Вернуться на главную" />
+              <img class="icon-link" src="#" alt="Вернуться на главную">
             </a>
           </li>
           <li class="breadcrumbs-item">
@@ -78,7 +78,7 @@
                     type="checkbox"
                     name="swimming-pool"
                     checked
-                  />
+                  >
                   <span class="control-text">Бассейн</span>
                 </label>
               </li>
@@ -89,13 +89,13 @@
                     type="checkbox"
                     name="parking"
                     checked
-                  />
+                  >
                   <span class="control-text">Парковка</span>
                 </label>
               </li>
               <li class="hotel-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="wi-fi" />
+                  <input class="control-input" type="checkbox" name="wi-fi">
                   <span class="control-text">Wi-Fi</span>
                 </label>
               </li>
@@ -113,7 +113,7 @@
                     name="hotel-group"
                     value="hotel"
                     checked
-                  />
+                  >
                   <span class="control-text">Гостиница</span>
                 </label>
               </li>
@@ -124,7 +124,7 @@
                     type="radio"
                     name="hotel-group"
                     value="motel"
-                  />
+                  >
                   <span class="control-text">Мотель</span>
                 </label>
               </li>
@@ -135,7 +135,7 @@
                     type="radio"
                     name="hotel-group"
                     value="apartments"
-                  />
+                  >
                   <span class="control-text">Апартаменты</span>
                 </label>
               </li>
@@ -146,10 +146,10 @@
             <legend class="hotel-filter-title">Стоимость, ₽:</legend>
             <div class="hotel-price-wrapper">
               <label class="control">
-                <input type="text" value="0" placeholder="от" />
+                <input type="text" value="0" placeholder="от">
               </label>
               <label class="control">
-                <input type="text" value="9000" placeholder="до" />
+                <input type="text" value="9000" placeholder="до">
               </label>
             </div>
           </fieldset>
@@ -186,6 +186,7 @@
       </section>
 
       <section class="hotels-cards">
+        <h2 class="visually-hidden">Карточки гостиниц</h2>
         <ul class="hotels-cards-list">
           <li class="hotels-cards-item">
             <a class="hotel-card-link" href="#">
@@ -193,21 +194,26 @@
                 class="hotel-image"
                 src="#"
                 alt="Пейзаж рядом с гостиницей Amara Resort & Spa"
-              />
+              >
               <h3 class="hotel-title">Amara Resort & Spa</h3>
             </a>
             <div class="hotel-detail-wrapper">
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 4000 ₽</span>
               <a class="button button-hotel-link" href="#">Подробнее</a>
-              <a class="button button-in-favourites" href="#">В избранное</a>
-              <img
+              <button class="button button-in-favourites" type="submit">
+                В избранное
+              </button>
+              <p class="stars star-4">
+                <span class="visually-hidden">4 звезды</span>
+                <img
                 class="hotel-stars"
                 src="#"
                 alt="Гостиница 4-звезды"
                 width="18"
                 height="17"
-              />
+              >
+              </p>
               <span class="hotel-rating">Рейтинг: 8,5</span>
             </div>
           </li>
@@ -218,21 +224,26 @@
                 class="hotel-image"
                 src="#"
                 alt="Пейзаж рядом с гостиницей Villas at Poco Diablo"
-              />
+              >
               <h3 class="hotel-title">Villas at Poco Diablo</h3>
             </a>
             <div class="hotel-detail-wrapper">
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 5000 ₽</span>
               <a class="button button-hotel-link" href="#">Подробнее</a>
-              <a class="button button-in-favourites-on" href="#">В избранном</a>
-              <img
+              <button class="button button-in-favourites-on" type="submit">
+                В избранном
+              </button>
+              <p class="stars star-4">
+                <span class="visually-hidden">4 звезды</span>
+                <img
                 class="hotel-stars"
                 src="#"
                 alt="Гостиница 4-звезды"
                 width="18"
                 height="17"
-              />
+              >
+              </p>
               <span class="hotel-rating">Рейтинг: 9,2</span>
             </div>
           </li>
@@ -243,21 +254,26 @@
                 class="hotel-image"
                 src="#"
                 alt="Пейзаж рядом с гостиницей Desert Quail Inn"
-              />
+              >
               <h3 class="hotel-title">Desert Quail Inn</h3>
             </a>
             <div class="hotel-detail-wrapper">
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 2500 ₽</span>
               <a class="button button-hotel-link" href="#">Подробнее</a>
-              <a class="button button-in-favourites" href="#">В избранное</a>
-              <img
+              <button class="button button-in-favourites" type="submit">
+                В избранное
+              </button>
+              <p class="stars star-3">
+                <span class="visually-hidden">3 звезды</span>
+                <img
                 class="hotel-stars"
                 src="#"
                 alt="Гостиница 3-звезды"
                 width="18"
                 height="17"
-              />
+              >
+              </p>
               <span class="hotel-rating">Рейтинг: 6,9</span>
             </div>
           </li>
@@ -268,21 +284,26 @@
                 class="hotel-image"
                 src="#"
                 alt="Пейзаж рядом с гостиницей GreenTree Inn"
-              />
+              >
               <h3 class="hotel-title">GreenTree Inn</h3>
             </a>
             <div class="hotel-detail-wrapper">
               <span class="hotel-type">Гостиница</span>
               <span class="hotel-price">От 1500 ₽</span>
               <a class="button button-hotel-link" href="#">Подробнее</a>
-              <a class="button button-in-favourites" href="#">В избранное</a>
-              <img
+              <button class="button button-in-favourites" type="submit">
+                В избранное
+              </button>
+              <p class="stars star-2">
+                <span class="visually-hidden">2 звезды</span>
+                <img
                 class="hotel-stars"
                 src="#"
                 alt="Гостиница 2-звезды"
                 width="18"
                 height="17"
-              />
+              >
+              </p>
               <span class="hotel-rating">Рейтинг: 5,0</span>
             </div>
           </li>
@@ -333,7 +354,7 @@
               id="newsletter-email"
               placeholder="Ваш e-mail"
               required
-            />
+            >
             <button class="button newsletter-button" type="submit">
               Подписаться
             </button>
@@ -383,7 +404,7 @@
             class="logo logo-htmlacademy"
             src="#"
             alt="Логотип HTML Academy"
-          />
+          >
         </a>
       </section>
     </footer>

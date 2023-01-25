@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Седона</title>
   </head>
+
   <body>
     <header class="page-header">
       <a class="logo-link">
-        <img
-          class="header-logo"
-          src="img/logo.svg"
-          alt="Логотип городка Седона"
-          width="140"
-          height="70"
-        />
+        <img class="header-logo" src="img/logo.svg" alt="Логотип городка Седона" width="140" height="70">
       </a>
 
       <nav class="navigation">
@@ -47,12 +43,16 @@
     </header>
 
     <main class="main-index">
-      <img src="#" alt="Добро пожаловать в Седону" />
-      <section class="welcome-block">
-        <h1 class="welcome-block-title">
-          Седона — небольшой городок в Аризоне, заслуживающий большего!
-        </h1>
-        <p class="welcome-block-description">
+      <header class="index-header">
+        <h1 class="visually-hidden">Седона</h1>
+        <img src="#" alt="Добро пожаловать в Седону">
+      </header>
+
+      <section class="advantages-block">
+        <h2 class="advantages-block-title">
+          Седона — небольшой городок в Аризоне,<br> заслуживающий большего!
+        </h2>
+        <p class="advantages-block-description">
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
       </section>
@@ -68,11 +68,7 @@
               </p>
             </div>
             <div class="advantages-item-image">
-              <img
-                class="advantages-image"
-                src="#"
-                alt="Мероприятия в Седоне"
-              />
+              <img class="advantages-image" src="#" alt="Мероприятия в Седоне">
             </div>
           </li>
           <li class="advantages-item">
@@ -101,7 +97,7 @@
           </li>
           <li class="advantages-item">
             <div class="advantages-item-image">
-              <img class="advantages-image" src="#" alt="Мост дьявола" />
+              <img class="advantages-image" src="#" alt="Мост дьявола">
             </div>
             <div class="advantages-item-text">
               <h3 class="advantages-title">Там есть мост дьявола</h3>
@@ -115,7 +111,7 @@
 
       <section class="services-block">
         <h2 class="services-block-title">
-          Приезжайте в Седону отдохнуть в комфорте и уюте!
+          Приезжайте в Седону отдохнуть <br> в комфорте и уюте!
         </h2>
         <p class="services-block-description">
           Опытный персонал и качественное обслуживание!
@@ -149,36 +145,21 @@
       <section class="search-hotel">
         <h2 class="search-hotel-title">Заинтересовались?</h2>
         <p class="search-hotel-description">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие
-          предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="button button-search-hotel" href="#"
-          >Поиск гостиницы в Седоне</a
-        >
+        <a class="button button-search-hotel" href="#">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="newsletter">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">
-          Только полезная информация и никакого спама, честное бойскаутское!
+          Только полезная информация и никакого спама,<br> честное бойскаутское!
         </p>
         <div class="newsletter-wrapper">
-          <form
-            class="newsletter-form"
-            action="https://echo.htmlacademy.ru"
-            method="post"
-          >
-            <label class="visually-hidden" for="newsletter-email"
-              >Ваш e-mail</label
-            >
-            <input
-              class="field"
-              type="email"
-              name="newsletter-email"
-              id="newsletter-email"
-              placeholder="Ваш e-mail"
-              required
-            />
+          <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
+            <input class="field" type="email" name="newsletter-email" id="newsletter-email" placeholder="Ваш e-mail"
+              required>
             <button class="button newsletter-button" type="submit">
               Подписаться
             </button>
@@ -203,10 +184,7 @@
               </a>
             </li>
             <li class="footer-social-item">
-              <a
-                class="button"
-                href="https://www.youtube.com/user/htmlacademyru"
-              >
+              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
@@ -224,65 +202,48 @@
       <section class="footer-logo-htmlacademy">
         <h2 class="visually-hidden">Сайт разработчика</h2>
         <a class="logo-htmlacademy-link" href="https://htmlacademy.ru/">
-          <img
-            class="logo logo-htmlacademy"
-            src="#"
-            alt="Логотип HTML Academy"
-          />
+          <img class="logo logo-htmlacademy" src="#" alt="Логотип HTML Academy">
         </a>
       </section>
     </footer>
 
-    <!-- Попап "Поиск гостиницы в Седоне" -->
+    <!-- Модальное окно "Поиск гостиницы в Седоне" -->
     <form action="https://echo.htmlacademy.ru/" method="post">
-      <h2 class="form-title">Поиск гостиницы в Седоне</h2>
+      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+      <button class="button button-close" type="button">
+        <img src="#" alt="Крестик для закрытия формы поиска гостиницы">
+        <span class="visually-hidden">Закрыть форму</span>
+      </button>
+
       <fieldset class="visit-date-options">
         <legend class="visually-hidden">Выбор даты заезда-выезда</legend>
         <p class="arrival-date-form">
-          <label class="date-form-label"
-            >Дата Заезда:
-            <input
-              class="field"
-              type="date"
-              name="arrival-date"
-              value="27 апреля 2020"
-            />
+          <label class="date-form-label">Дата Заезда:
+            <input class="field" type="text" name="arrival-date" value="27 апреля 2020">
           </label>
+          <span class="date-form-sub">Мы не можем отправить вас в прошлое.</span>
         </p>
         <p class="leave-date-form">
-          <label class="date-form-label"
-            >Дата Выезда::
-            <input
-              class="field"
-              type="date"
-              name="leave-date"
-              value="1 сентября 2023"
-            />
+          <label class="date-form-label">Дата Выезда::
+            <input class="field" type="text" name="leave-date" value="1 сентября 2023">
           </label>
+          <span class="date-form-sub">На эти даты есть свободные номера. Пока есть.</span>
         </p>
       </fieldset>
 
       <fieldset class="number-residents-options">
         <legend class="visually-hidden">Количество взрослых и детей</legend>
-        <label class="adults-label"
-          >Взрослые:
-          <input class="field" type="number" name="adults" value="2" />
+        <label class="adults-label">Взрослые:
+          <input class="field" type="number" name="adults" value="2">
         </label>
         <label class="children-label" for="children-field">Дети:</label>
         <div class="tooltip">
-          <img class="tooltip-img" src="#" alt="Всплывающая подсказка"">
-          <p
-            class="tooltip-text"
-            data-tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно."
-          ></p>
+          <img class="tooltip-img" src="#" alt="Всплывающая подсказка">
+          <p class="tooltip-text"
+            data-tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
+          </p>
         </div>
-        <input
-          class="field"
-          id="children-field"
-          type="number"
-          name="children"
-          value="2"
-        />
+        <input class="field" id="children-field" type="number" name="children" value="2">
       </fieldset>
       <button class="button" type="submit">Найти</button>
     </form>
