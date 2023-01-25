@@ -25,8 +25,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <!-- добавить ссылку на catalog.html -->
-            <a class="navigation-link" href="#">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -41,7 +40,6 @@
             </a>
           </li>
           <li class="navigation-item">
-            <!-- добавить ссылку на catalog.html -->
             <a class="button button-navigation" href="#">Хочу сюда!</a>
           </li>
         </ul>
@@ -154,7 +152,6 @@
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие
           предложения гостиниц в Седоне
         </p>
-        <!-- добавить ссылку на catalog.html -->
         <a class="button button-search-hotel" href="#"
           >Поиск гостиницы в Седоне</a
         >
@@ -165,21 +162,26 @@
         <p class="subscribe-description">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
-        <div class="newsletter-container">
+        <div class="newsletter-wrapper">
           <form
             class="newsletter-form"
             action="https://echo.htmlacademy.ru"
             method="post"
           >
-            <label class="visually-hidden" for="newsletter-email">Ваш e-mail</label>
-            <input class="field"
+            <label class="visually-hidden" for="newsletter-email"
+              >Ваш e-mail</label
+            >
+            <input
+              class="field"
               type="email"
               name="newsletter-email"
               id="newsletter-email"
               placeholder="Ваш e-mail"
               required
             />
-            <button class="button newsletter-button" type="submit">Подписаться</button>
+            <button class="button newsletter-button" type="submit">
+              Подписаться
+            </button>
           </form>
         </div>
       </section>
@@ -188,21 +190,15 @@
     <footer class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <div class="footer-social-container">
+        <div class="footer-social-wrapper">
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a
-                class="button"
-                href="https://vk.com/htmlacademy"
-              >
+              <a class="button" href="https://vk.com/htmlacademy">
                 <span class="visually-hidden">Vkontakte</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a
-                class="button"
-                href="https://t.me/htmlacademy"
-              >
+              <a class="button" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Telegram</span>
               </a>
             </li>
@@ -236,5 +232,59 @@
         </a>
       </section>
     </footer>
+
+    <!-- Попап "Поиск гостиницы в Седоне" -->
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <h2 class="form-title">Поиск гостиницы в Седоне</h2>
+      <fieldset class="visit-date-options">
+        <legend class="visually-hidden">Выбор даты заезда-выезда</legend>
+        <p class="arrival-date-form">
+          <label class="date-form-label"
+            >Дата Заезда:
+            <input
+              class="field"
+              type="date"
+              name="arrival-date"
+              value="27 апреля 2020"
+            />
+          </label>
+        </p>
+        <p class="leave-date-form">
+          <label class="date-form-label"
+            >Дата Выезда::
+            <input
+              class="field"
+              type="date"
+              name="leave-date"
+              value="1 сентября 2023"
+            />
+          </label>
+        </p>
+      </fieldset>
+
+      <fieldset class="number-residents-options">
+        <legend class="visually-hidden">Количество взрослых и детей</legend>
+        <label class="adults-label"
+          >Взрослые:
+          <input class="field" type="number" name="adults" value="2" />
+        </label>
+        <label class="children-label" for="children-field">Дети:</label>
+        <div class="tooltip">
+          <img class="tooltip-img" src="#" alt="Всплывающая подсказка"">
+          <p
+            class="tooltip-text"
+            data-tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно."
+          ></p>
+        </div>
+        <input
+          class="field"
+          id="children-field"
+          type="number"
+          name="children"
+          value="2"
+        />
+      </fieldset>
+      <button class="button" type="submit">Найти</button>
+    </form>
   </body>
 </html>
