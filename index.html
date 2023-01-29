@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="UTF-8">
-    <title>Седона</title>
+    <title>HTML Academy: Седона</title>
   </head>
 
   <body>
@@ -11,7 +11,7 @@
       <a class="logo-link">
         <img class="header-logo" src="images/header/logo.svg" width="140" height="70" alt="Логотип городка Седона.">
       </a>
-      <nav class="navigation">
+      <nav class="navigation-site">
         <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link">Главная</a>
@@ -23,7 +23,9 @@
             <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+      </nav>
+      <nav class="navigation-user">
+        <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <img src="#" alt="">
@@ -46,7 +48,7 @@
     <main class="main-index">
       <section class="hero">
         <h1 class="visually-hidden">Седона</h1>
-        <img src="#" alt="Горы.">
+        <img src="images/welcome/index-background.jpg" width="1200" height="485" alt="Горы.">
         <img src="images/welcome/welcome.svg" width="458" height="352"
           alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
@@ -119,21 +121,27 @@
         </p>
         <ul class="services-list">
           <li class="services-item">
-            <img src="#" alt="">
+            <div class="services-image-wrapper">
+              <img src="#" alt="">
+            </div>
             <h3 class="services-title">Жильё</h3>
             <p class="services-description">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
           <li class="services-item">
-            <img src="#" alt="">
+            <div class="services-image-wrapper">
+              <img src="#" alt="">
+            </div>
             <h3 class="services-title">Еда</h3>
             <p class="services-description">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="services-item">
-            <img src="#" alt="">
+            <div class="services-image-wrapper">
+              <img src="#" alt="">
+            </div>
             <h3 class="services-title">Сувениры</h3>
             <p class="services-description">
               Не только китайского, но и настоящего местного производства!
@@ -168,34 +176,30 @@
     <footer class="page-footer">
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети.</h2>
-        <div class="footer-social-wrapper">
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="https://vk.com/htmlacademy">
-                <img src="#" alt="">
-                <span class="visually-hidden">Vkontakte</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://t.me/htmlacademy">
-                <img src="#" alt="">
-                <span class="visually-hidden">Telegram</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="#" alt="">
-                <span class="visually-hidden">Youtube</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+              <img src="#" alt="">
+              <span class="visually-hidden">Vkontakte</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy">
+              <img src="#" alt="">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+              <img src="#" alt="">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
       </section>
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="contacts-phone" href="tel:+78128121212">
-          <span>+7 (812) 812-12-12</span>
-        </a>
+        <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <section class="footer-logo-htmlacademy">
         <h2 class="visually-hidden">Сайт разработчика.</h2>
@@ -206,43 +210,47 @@
       </section>
     </footer>
     <!-- Модальное окно "Поиск гостиницы в Седоне" -->
-    <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-      <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-      <button class="button button-close" type="button">
-        <img class="modal-form-img" src="#" alt="">
-        <span class="visually-hidden">Закрыть форму.</span>
-      </button>
-      <fieldset class="visit-date-options">
-        <legend class="visually-hidden">Выбор даты заезда-выезда.</legend>
-        <p class="arrival-date-form">
-          <label class="date-form-field">Дата Заезда:
-            <input class="field" type="text" name="arrival-date" value="27 апреля 2020">
-          </label>
-          <span class="date-form-sub">Мы не можем отправить вас в прошлое.</span>
-        </p>
-        <p class="leave-date-form">
-          <label class="date-form-field">Дата Выезда::
-            <input class="field" type="text" name="leave-date" value="1 сентября 2023">
-          </label>
-          <span class="date-form-sub">На эти даты есть свободные номера. Пока есть.</span>
-        </p>
-      </fieldset>
-      <fieldset class="number-residents-options">
-        <legend class="visually-hidden">Количество взрослых и детей.</legend>
-        <label class="adults-label">Взрослые:
-          <input class="field" type="number" name="adults" value="2">
-        </label>
-        <label class="children-label" for="children-field">Дети:</label>
-        <div class="tooltip">
-          <img class="tooltip-img" src="#" alt="Всплывающая подсказка.">
-          <p class="tooltip-text"
-            data-tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
-          </p>
-        </div>
-        <input class="field" id="children-field" type="number" name="children" value="2">
-      </fieldset>
-      <button class="button" type="submit">Найти</button>
-    </form>
+    <div class="modal-backdrop">
+      <div class="modal-wrapper">
+        <button class="button button-close" type="button">
+          <img class="modal-form-img" src="#" alt="">
+          <span class="visually-hidden">Закрыть форму.</span>
+        </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <fieldset class="visit-date-options">
+            <legend class="visually-hidden">Выбор даты заезда-выезда.</legend>
+            <p class="arrival-date-form">
+              <label class="date-form-field">Дата Заезда:
+                <input class="field" type="text" name="arrival-date" value="27 апреля 2020">
+              </label>
+              <span class="date-form-sub">Мы не можем отправить вас в прошлое.</span>
+            </p>
+            <p class="leave-date-form">
+              <label class="date-form-field">Дата Выезда::
+                <input class="field" type="text" name="leave-date" value="1 сентября 2023">
+              </label>
+              <span class="date-form-sub">На эти даты есть свободные номера. Пока есть.</span>
+            </p>
+          </fieldset>
+          <fieldset class="number-residents-options">
+            <legend class="visually-hidden">Количество взрослых и детей.</legend>
+            <label class="adults-label">Взрослые:
+              <input class="field" type="number" name="adults" value="2">
+            </label>
+            <label class="children-label" for="children-field">Дети:</label>
+            <div class="tooltip">
+              <img class="tooltip-img" src="#" alt="Всплывающая подсказка.">
+              <p class="tooltip-text"
+                data-tooltip="Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.">
+              </p>
+            </div>
+            <input class="field" id="children-field" type="number" name="children" value="2">
+          </fieldset>
+          <button class="button" type="submit">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 
 </html>
