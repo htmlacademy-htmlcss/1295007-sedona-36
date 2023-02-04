@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Гостиницы Седоны</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -123,8 +124,8 @@
               <input type="range" min="0" max="10000">
             </div>
             <div class="button-state-wrapper">
-              <button class="button" type="submit">Применить</button>
-              <button class="button" type="reset">Сбросить</button>
+              <button class="button button-apply" type="submit">Применить</button>
+              <button class="button button-reset" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -137,7 +138,7 @@
             <option value="popular">Сначала популярные</option>
             <option value="expensive">Сначала дорогие</option>
           </select>
-          <div class="hotels-sort-wrapper">
+          <div class="hotels-sort-wrapper-view">
             <h2 class="visually-hidden">Фильтры для отображения списка гостиниц.</h2>
             <a class="button button-sort-current" href="#">
               <img src="#" alt="">
@@ -247,7 +248,7 @@
           </li>
         </ol>
       </section>
-      <section class="newsletter">
+      <section class="newsletter newsletter-inner">
         <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
         <p class="subscribe-description">
           Только полезная информация и никакого спама, честное бойскаутское!
