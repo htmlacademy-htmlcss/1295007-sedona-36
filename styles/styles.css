@@ -20,6 +20,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background: #F2F2F2;
 }
 
 .button {
@@ -38,6 +39,11 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.main-backdrop, .inner-backdrop {
+  background: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 /* header */
