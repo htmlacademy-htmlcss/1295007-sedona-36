@@ -35,13 +35,27 @@ body {
   text-transform: uppercase;
 }
 
+.field {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  background: #F2F2F2;
+  border-radius: 4px 0 0 4px;
+}
+
+input::placeholder {
+  font-weight: 400;
+}
+
 .reset-list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.main-backdrop, .inner-backdrop {
+.container {
   background: #FFFFFF;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
@@ -62,16 +76,6 @@ body {
   text-decoration: none;
 }
 
-.search {
-  background-image: url("../images/header/search.svg");
-  background-repeat: no-repeat;
-}
-
-.heart {
-  background-image: url("../images/header/heart.svg");
-  background-repeat: no-repeat;
-}
-
 .button-navigation {
   border-radius: 4px;
 }
@@ -79,18 +83,19 @@ body {
 /* main-index */
 
 .hero {
+  background-color:#82B3D3;
   background-image: url("../images/welcome/index-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
 
-/* advantages and services */
+/* advantages */
 
-.advantages-block, .services-block {
+.advantages-block {
   text-align: center;
 }
 
-.advantages-block-title, .services-block-title {
+.advantages-block-title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -98,12 +103,12 @@ body {
   color: #000000;
 }
 
-.advantages-block-description, .services-block-description {
+.advantages-block-description {
   font-size: 22px;
   line-height: 26px;
 }
 
-.advantages-title, .services-title {
+.advantages-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -111,20 +116,47 @@ body {
   color: #000000;
 }
 
-.advantages-item:first-child, .advantages-item:last-child {
+.advantages-item:nth-child(even) {
+  background: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:nth-child(odd) {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-list .inside-blue {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.advantages-item:nth-child(2), .advantages-item:nth-child(4) {
-  background: rgba(131, 179, 211, 0.12);
+/* services */
+
+.services-block {
+  text-align: center;
 }
 
-.advantages-item:nth-child(3) {
-  background: rgba(131, 179, 211, 0.2);
+.services-block-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
 
-.services-item:nth-child(1), .services-item:nth-child(3) {
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.services-block-description {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.services-item:nth-child(odd) {
   background: rgba(131, 179, 211, 0.12);
 }
 
@@ -154,10 +186,13 @@ body {
 
 /* newsletter */
 
-.newsletter {
+.newsletter-main {
+  background-color:#82B3D3;
   color: #FFFFFF;
   text-align: center;
   background-image: url("../images/subscribe/background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }
 
 .subscribe-title {
@@ -172,14 +207,6 @@ body {
   line-height: 26px;
 }
 
-.newsletter-form {
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-  background: #F2F2F2;
-  border-radius: 0 4px 4px 0;
-}
-
 .newsletter-button {
   font-size: 20px;
   line-height: 36px;
@@ -188,6 +215,10 @@ body {
 }
 
 /* footer */
+
+.footer-social-item .button {
+  background: #FFFFFF;
+}
 
 .footer-contacts a {
   font-size: 40px;
@@ -201,6 +232,7 @@ body {
 /* main-inner header */
 
 .inner-header {
+  background-color:#82B3D3;
   background-image: url("../images/breadcrumbs/background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -230,14 +262,8 @@ body {
   line-height: 23px;
 }
 
-.hotel-price-wrapper [placeholder] {
-  line-height: 24px;
-  color: #000000;
-}
-
-.hotel-price-wrapper [value] {
-  font-weight: 700;
-  line-height: 24px;
+.hotel-price-wrapper input::placeholder {
+  text-align: right;
 }
 
 .button-apply {
@@ -281,7 +307,6 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  text-transform: capitalize;
 }
 
 .button-in-favourites {
@@ -342,31 +367,17 @@ body {
 }
 
 .modal-wrapper {
-  background: #FFFFFF;
-}
-
-.modal-form {
   font-weight: 700;
   color: #000000;
   font-size: 20px;
   line-height: 24px;
+  background: #FFFFFF;
 }
 
 .modal-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-}
-
-.date-form-field, .adults-label, .children-label {
-  text-transform: capitalize;
-}
-
-.date-field {
-  font-weight: inherit;
-  font-size: 18px;
-  line-height: inherit;
-  background: #F2F2F2;
 }
 
 .arrival-date-form .date-form-sub {
@@ -384,10 +395,7 @@ body {
 }
 
 .number-field {
-  font-weight: inherit;
-  font-size: 18px;
   line-height: 20px;
-  background: #F2F2F2;
   text-align: center;
 }
 
