@@ -15,7 +15,7 @@
 }
 
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -34,16 +34,18 @@ body {
   text-transform: uppercase;
 }
 
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* header */
 
 .page-header {
   font-weight: 700;
   text-align: center;
   color: #000000;
-}
-
-.navigation-list {
-  list-style: none;
 }
 
 .navigation-link {
@@ -78,10 +80,6 @@ body {
 
 /* advantages and services */
 
-.advantages-list, .services-list {
-  list-style: none;
-}
-
 .advantages-block, .services-block {
   text-align: center;
 }
@@ -107,17 +105,21 @@ body {
   color: #000000;
 }
 
-.basic-3 {
+.advantages-item:first-child, .advantages-item:last-child {
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.second-1 {
+.advantages-item:nth-child(2), .advantages-item:nth-child(4) {
   background: rgba(131, 179, 211, 0.12);
 }
 
-.second-2 {
+.advantages-item:nth-child(3) {
   background: rgba(131, 179, 211, 0.2);
+}
+
+.services-item:nth-child(1), .services-item:nth-child(3) {
+  background: rgba(131, 179, 211, 0.12);
 }
 
 /* search-hotel */
@@ -181,10 +183,6 @@ body {
 
 /* footer */
 
-.footer-social-list {
-  list-style: none;
-}
-
 .footer-contacts a {
   font-size: 40px;
   line-height: 40px;
@@ -210,10 +208,6 @@ body {
   line-height: 78px;
 }
 
-.breadcrumbs {
-  list-style: none;
-}
-
 .breadcrumbs-link {
   font-size: 16px;
   color: inherit;
@@ -228,10 +222,6 @@ body {
 
 .hotel-filter-item span {
   line-height: 23px;
-}
-
-.hotels-cards-list {
-  list-style: none;
 }
 
 .hotel-price-wrapper [placeholder] {
@@ -260,10 +250,6 @@ body {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-}
-
-.hotel-filter-list {
-  list-style: none;
 }
 
 .select-control {
@@ -312,10 +298,6 @@ body {
 }
 
 /* pagination */
-
-.pagination {
-  list-style: none;
-}
 
 .pagination-link {
   font-weight: 700;
