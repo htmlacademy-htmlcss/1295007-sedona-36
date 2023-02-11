@@ -34,6 +34,7 @@ body {
   background-color: #756157;
   text-decoration: none;
   text-transform: uppercase;
+  padding: 0;
 }
 
 .field {
@@ -53,7 +54,7 @@ input::placeholder {
 .reset-list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .visually-hidden {
@@ -66,7 +67,7 @@ input::placeholder {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hiddden;
+  overflow: hidden;
 }
 
 .container {
@@ -97,12 +98,12 @@ input::placeholder {
 
 .navigation {
   margin: 0 auto;
+  width: 892px;
 }
 
 .navigation-site .navigation-list {
   display: flex;
   width: 450px;
-  margin-left: 28px;
 }
 
 .navigation-user .navigation-list {
@@ -151,11 +152,12 @@ input::placeholder {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 64px 0;
+  padding: 69px 0;
   margin-bottom: 21px;
 }
 
 .advantages-block-title {
+  margin: 0;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -319,6 +321,7 @@ input::placeholder {
   justify-content: center;
   padding: 96px 258px 104px;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .newsletter-main {
@@ -368,8 +371,10 @@ input::placeholder {
 }
 
 .footer-social-list {
+  width: 142px;
+  margin-right: 42px;
+  padding: 0;
   display: flex;
-  margin: 45px 42px 35px 70px;
 }
 
 .footer-social-item .button {
@@ -378,7 +383,7 @@ input::placeholder {
 
 .footer-contacts {
   width: 720px;
-  margin: 40px 0 30px 0;
+  margin-right: 42px;
   text-align: center;
 }
 
@@ -393,7 +398,6 @@ input::placeholder {
 
 .footer-logo-htmlacademy {
   width: 115px;
-  margin: 49px 0 39px;
 }
 
 /* main-inner header */
@@ -405,9 +409,11 @@ input::placeholder {
   background-repeat: no-repeat;
   color: #FFFFFF;
   text-transform: capitalize;
+  margin-bottom: 50px;
 }
 
 .inner-header-title {
+  margin: 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -478,7 +484,6 @@ input::placeholder {
   display: flex;
   margin: 0 auto;
   width: 1060px;
-  margin-top: 50px;
   margin-bottom: 40px;
 }
 
@@ -489,19 +494,18 @@ input::placeholder {
   color: #000000;
   text-transform: uppercase;
   margin: 0;
-  margin-right: auto;
 }
 
 .select-control {
   line-height: 21px;
   width: 292px;
+  margin-left: auto;
   margin-right: 70px;
   border: 2px solid #E5E5E5;
 }
 
 .hotels-sort-wrapper-view {
   width: 160px;
-  margin-left: 70px;
 }
 
 .button-sort-current {
@@ -569,7 +573,8 @@ input::placeholder {
   display: flex;
   width: 1060px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 60px;
   padding: 0;
 }
 
@@ -580,6 +585,7 @@ input::placeholder {
   line-height: 36px;
   text-align: center;
   background-color: #82B3D3;
+  margin-right: 8px;
 }
 
 .pagination-link {
