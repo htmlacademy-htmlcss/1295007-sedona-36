@@ -15,7 +15,7 @@
           <img class="header-logo" src="images/header/logo.svg" width="140" height="70" alt="Логотип городка Седона.">
         </a>
         <nav class="navigation navigation-site">
-          <ul class="navigation-list reset-list">
+          <ul class="navigation-site-list reset-list">
             <li class="navigation-item">
               <a class="navigation-link" href="index.html">Главная</a>
             </li>
@@ -28,7 +28,7 @@
           </ul>
         </nav>
         <nav class="navigation navigation-user">
-          <ul class="navigation-list reset-list">
+          <ul class="navigation-user-list reset-list">
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <img src="images/header/search.svg" width="20" height="20" alt="">
@@ -49,7 +49,7 @@
         </nav>
       </header>
       <main class="main-container main-inner">
-        <header class="main-container inner-header">
+        <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs reset-list">
             <li class="breadcrumbs-item">
@@ -65,7 +65,7 @@
           <section class="hotel-filter">
             <h2 class="visually-hidden">Список гостиниц с фильтрами.</h2>
             <form class="hotel-filter-form" action="https://echo.htmlacademy.ru/" method="get">
-              <fieldset class="hotel-filter-group-infra">
+              <fieldset class="hotel-filter-group infra">
                 <legend class="hotel-filter-title">Инфраструктура:</legend>
                 <ul class="hotel-filter-list reset-list">
                   <li class="hotel-filter-item">
@@ -88,7 +88,7 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="hotel-filter-group-type">
+              <fieldset class="hotel-filter-group type">
                 <legend class="hotel-filter-title">Тип Жилья:</legend>
                 <ul class="hotel-filter-list reset-list">
                   <li class="hotel-filter-item">
@@ -111,15 +111,13 @@
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="hotel-filter-group-price">
+              <fieldset class="hotel-filter-group price">
                 <legend class="hotel-filter-title">Стоимость, ₽:</legend>
                 <div class="hotel-price-wrapper">
-                  <label class="control">
-                    <input type="text" value="0" placeholder="от">
-                  </label>
-                  <label class="control">
-                    <input type="text" value="9000" placeholder="до">
-                  </label>
+                  <label class="min-price" for="min-price">от</label>
+                  <input type="text" id="min-price" value="0" placeholder="0">
+                  <label class="max-price" for="max-price">до</label>
+                  <input type="text" id="max-price" value="9000" placeholder="12000">
                 </div>
               </fieldset>
               <div class="button-state-wrapper">
@@ -143,7 +141,7 @@
                 <span class="visually-hidden">Отобразить сеткой.</span>
               </a>
               <a class="button button-sort-cards" href="#">
-                <img src="images/catalog-cards-header/sort-cards.svg" width="16" height="" alt="14">
+                <img src="images/catalog-cards-header/sort-cards.svg" width="16" height="14" alt="">
                 <span class="visually-hidden">Отобразить карточками.</span>
               </a>
               <a class="button button-sort-list" href="#">
