@@ -649,7 +649,7 @@ body {
   height: 11px;
   display: block;
   top: 5px;
-  right: -20px;
+  right: -18px;
   bottom: 5px;
 }
 
@@ -661,6 +661,14 @@ body {
   font-size: 16px;
   color: inherit;
   text-decoration: none;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotel-filter {
@@ -829,15 +837,13 @@ body {
   border-radius: 4px;
 }
 
-/* не применяется рамка при наведении, нажатии */
-
-.card-grid-toggle:hover,
-.card-grid-toggle:active {
+.button-sort-current {
   border: 2px solid #000000;
 }
 
-.button-sort-current {
-  border-color: #000000;
+.card-grid-toogle:hover,
+.card-grid-toogle:active {
+  border: 2px solid #000000;
 }
 
 /* hotels-cards */
