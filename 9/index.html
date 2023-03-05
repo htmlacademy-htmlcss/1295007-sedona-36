@@ -257,54 +257,76 @@
                 <legend class="visually-hidden">Выбор даты заезда-выезда.</legend>
                 <div class="date-form-group">
                   <label class="date-form-label" for="arrival-date">Дата Заезда:</label>
-                  <input class="field date-field" id="arrival-date" type="text" name="arrival-date"
-                    value="27 апреля 2020">
+                  <div class="date-field-wrapper">
+                    <input class="field date-field" id="arrival-date" type="text" name="arrival-date"
+                      value="27 апреля 2020">
+                    <p class="date-form-sub">Мы не можем отправить вас в прошлое.</p>
+                  </div>
                 </div>
-                <p class="date-form-sub">Мы не можем отправить вас в прошлое.</p>
+
                 <div class="date-form-group">
                   <label class="date-form-label" for="leave-date">Дата Выезда:</label>
-                  <input class="field date-field" id="leave-date" type="text" name="leave-date" value="1 сентября 2023">
+                  <div class="date-field-wrapper">
+                    <input class="field date-field" id="leave-date" type="text" name="leave-date"
+                      value="1 сентября 2023">
+                    <p class="date-form-sub date-form-sub-leave">На эти даты есть свободные номера. Пока есть.</p>
+                  </div>
                 </div>
-                <p class="date-form-sub date-form-sub-leave">На эти даты есть свободные номера. Пока есть.</p>
+
               </fieldset>
               <fieldset class="number-residents-options">
                 <legend class="visually-hidden">Количество взрослых и детей.</legend>
                 <div class="amount-form-group">
                   <label class="number-field-label" for="adults">Взрослые:</label>
                   <div class="selection-number-field">
-                    <button class="button amount-form-group-button " type="button">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
-                        <path fill="#756157" fill-opacity=".3" d="M0 0v2h14V0H0Z" />
+                    <button class="amount-form-group-button button-minus" type="button">
+                      <span class="visually-hidden">Уменьшить количество.</span>
+                      <svg class="icon minus-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 20 20">
+                        <path d="M3 9v2h14V9H3Z" />
                       </svg>
                     </button>
                     <input class="field number-field" id="adults" type="number" name="adults" value="2">
-                    <button class="button amount-form-group-button button-plus" type="button">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
-                        <path fill="#756157" fill-opacity=".3" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                    <button class="amount-form-group-button button-plus" type="button">
+                      <span class="visually-hidden">Увеличить количество.</span>
+                      <svg class="icon plus-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 20 20">
+                        <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                       </svg>
                     </button>
                   </div>
                 </div>
                 <div class="amount-form-group amount-form-group-children">
-                  <span class="number-field-label number-field-label-icon">
+                  <span class="number-field-label-icon">
                     <label class="number-field-label" for="children-field">Дети:</label>
                     <span class="tooltip">
-                      <button  class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
-                        <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" viewBox="0 0 26 26"><circle cx="13" cy="13" r="13"/><path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z" clip-rule="evenodd"/></svg>
+                      <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                        <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                          viewBox="0 0 26 26">
+                          <circle cx="13" cy="13" r="13" />
+                          <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2V7Zm2 12h-2v-9h2v9Z"
+                            clip-rule="evenodd" />
+                        </svg>
                       </button>
-                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                      <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей,
+                        которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются
+                        бесплатно.</span>
                     </span>
                   </span>
                   <div class="selection-number-field">
-                    <button class="button amount-form-group-button" type="button">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="2" fill="none" viewBox="0 0 14 2">
-                        <path fill="#756157" fill-opacity=".3" d="M0 0v2h14V0H0Z" />
+                    <button class="amount-form-group-button button-minus" type="button">
+                      <span class="visually-hidden">Уменьшить количество.</span>
+                      <svg class="icon minus-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 20 20">
+                        <path d="M3 9v2h14V9H3Z" />
                       </svg>
                     </button>
                     <input class="field number-field" id="children-field" type="number" name="children" value="2">
-                    <button class="button amount-form-group-button button-plus" type="button">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="none" viewBox="0 0 14 14">
-                        <path fill="#756157" fill-opacity=".3" d="M14 6H8V0H6v6H0v2h6v6h2V8h6V6Z" />
+                    <button class="amount-form-group-button button-plus" type="button">
+                      <span class="visually-hidden">Увеличить количество.</span>
+                      <svg class="icon plus-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                        viewBox="0 0 20 20">
+                        <path d="M17 9h-6V3H9v6H3v2h6v6h2v-6h6V9Z" />
                       </svg>
                     </button>
                   </div>
@@ -312,7 +334,6 @@
               </fieldset>
               <button class="button button-search" type="submit">Найти</button>
             </form>
-
           </section>
         </div>
       </div>
