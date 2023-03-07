@@ -78,7 +78,8 @@ img {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -924,12 +925,14 @@ img {
   padding: 12px 50px 12px 20px;
   font-weight: 700;
   border: none;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .price-input-wrapper input::-webkit-outer-spin-button,
 .price-input-wrapper input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1094,7 +1097,8 @@ img {
   margin-right: 70px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   cursor: pointer;
 
   background-image: url("../images/catalog-cards-list/arrow.svg");
@@ -1631,7 +1635,8 @@ img {
 
 .number-field::-webkit-outer-spin-button,
 .number-field::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
+          appearance: none;
   margin: 0;
 }
 
@@ -1644,7 +1649,8 @@ img {
   line-height: 20px;
   border-radius: 0;
   fill: #756157;
-  appearance: textfield;
+  -webkit-appearance: textfield;
+          appearance: textfield;
 }
 
 .number-field:hover {
