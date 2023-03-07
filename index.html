@@ -4,8 +4,8 @@
   <head>
     <meta charset="UTF-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <link rel="shortcut icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/styles.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -85,15 +85,13 @@
             </li>
             <li class="advantages-item">
               <div class="advantages-item-wrapper">
-                <h3 class="advantages-title">Красивая дорога</h3>
-                <p class="advantages-description">
-                  Ехать в Седону из Лас-Вегаса совсем не скучно!
-                </p>
+                <h3 class="advantages-title">Красивая<br>дорога</h3>
+                <p class="advantages-description">Ехать в Седону из&nbsp;Лас-Вегаса совсем не скучно!</p>
               </div>
             </li>
             <li class="advantages-item">
               <div class="advantages-item-wrapper">
-                <h3 class="advantages-title">Мало туристов</h3>
+                <h3 class="advantages-title">Мало<br>туристов</h3>
                 <p class="advantages-description">
                   Большинство едет в Гранд Каньон и толпится там
                 </p>
@@ -101,7 +99,7 @@
             </li>
             <li class="advantages-item advantages-item-inside-blue advantages-item-reverse">
               <div class="advantages-item-wrapper">
-                <h3 class="advantages-title">Там есть мост дьявола</h3>
+                <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
                 <p class="advantages-description">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
@@ -125,35 +123,26 @@
           </div>
           <ul class="services-list reset-list">
             <li class="services-item">
-              <div class="services-image-wrapper">
-                <img src="images/services/home.svg" width="75" height="72" alt="">
-              </div>
-              <div class="services-text-wrapper">
+              <div class="services-text-wrapper home">
                 <h3 class="services-title">Жильё</h3>
                 <p class="services-description">
-                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                  Рекомендуем пожить в&nbsp;настоящем мотеле,<br>всё как в кино!
                 </p>
               </div>
             </li>
             <li class="services-item">
-              <div class="services-image-wrapper">
-                <img src="images/services/food.svg" width="74" height="70" alt="">
-              </div>
-              <div class="services-text-wrapper">
+              <div class="services-text-wrapper food">
                 <h3 class="services-title">Еда</h3>
                 <p class="services-description">
-                  Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                  Всегда заказывайте<br>топовый фирменный бургер, вы не разочаруетесь!
                 </p>
               </div>
             </li>
             <li class="services-item">
-              <div class="services-image-wrapper">
-                <img src="images/services/souvenirs.svg" width="64" height="76" alt="">
-              </div>
-              <div class="services-text-wrapper">
+              <div class="services-text-wrapper souvenirs">
                 <h3 class="services-title">Сувениры</h3>
                 <p class="services-description">
-                  Не только китайского, но и настоящего местного производства!
+                  Не только китайского,<br>но и настоящего местного производства!
                 </p>
               </div>
             </li>
@@ -258,7 +247,7 @@
                   <label class="date-form-label" for="arrival-date">Дата Заезда:</label>
                   <div class="date-field-wrapper">
                     <input class="field date-field" id="arrival-date" type="text" name="arrival-date"
-                      value="27 апреля 2020">
+                      value="27 апреля 2020" placeholder="Выберите дату" required>
                     <p class="date-form-sub">Мы не можем отправить вас в прошлое.</p>
                   </div>
                 </div>
@@ -267,7 +256,7 @@
                   <label class="date-form-label" for="leave-date">Дата Выезда:</label>
                   <div class="date-field-wrapper">
                     <input class="field date-field" id="leave-date" type="text" name="leave-date"
-                      value="1 сентября 2023">
+                      value="1 сентября 2023" placeholder="Выберите дату" required>
                     <p class="date-form-sub date-form-sub-leave">На эти даты есть свободные номера. Пока есть.</p>
                   </div>
                 </div>
@@ -285,7 +274,8 @@
                         <path d="M3 9v2h14V9H3Z" />
                       </svg>
                     </button>
-                    <input class="field number-field" id="adults" type="number" name="adults" value="2">
+                    <input class="field number-field" id="adults" type="number" name="adults" value="2" placeholder="0"
+                      required>
                     <button class="amount-form-group-button button-plus" type="button">
                       <span class="visually-hidden">Увеличить количество.</span>
                       <svg class="icon plus-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -320,7 +310,8 @@
                         <path d="M3 9v2h14V9H3Z" />
                       </svg>
                     </button>
-                    <input class="field number-field" id="children-field" type="number" name="children" value="2">
+                    <input class="field number-field" id="children-field" type="number" name="children" value="2"
+                      placeholder="0" required>
                     <button class="amount-form-group-button button-plus" type="button">
                       <span class="visually-hidden">Увеличить количество.</span>
                       <svg class="icon plus-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
